@@ -9,13 +9,12 @@
 /* Begin PBXBuildFile section */
 		7904701925D8CB5900F5189F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7904701825D8CB5900F5189F /* AppDelegate.swift */; };
 		7904701B25D8CB5900F5189F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7904701A25D8CB5900F5189F /* SceneDelegate.swift */; };
-		7904701D25D8CB5900F5189F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7904701C25D8CB5900F5189F /* ViewController.swift */; };
-		7904702025D8CB5900F5189F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7904701E25D8CB5900F5189F /* Main.storyboard */; };
 		7904702325D8CB5900F5189F /* PixOrganizer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7904702125D8CB5900F5189F /* PixOrganizer.xcdatamodeld */; };
 		7904702525D8CB5900F5189F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7904702425D8CB5900F5189F /* Assets.xcassets */; };
 		7904702825D8CB5900F5189F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7904702625D8CB5900F5189F /* LaunchScreen.storyboard */; };
 		7904703325D8CB5900F5189F /* PixOrganizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7904703225D8CB5900F5189F /* PixOrganizerTests.swift */; };
 		7904703E25D8CB5900F5189F /* PixOrganizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7904703D25D8CB5900F5189F /* PixOrganizerUITests.swift */; };
+		79E9A7E625D9896C00EEF1C3 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9A7E525D9896C00EEF1C3 /* ContactsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +38,6 @@
 		7904701525D8CB5900F5189F /* PixOrganizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixOrganizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7904701825D8CB5900F5189F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7904701A25D8CB5900F5189F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7904701C25D8CB5900F5189F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7904701F25D8CB5900F5189F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7904702225D8CB5900F5189F /* PixOrganizer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PixOrganizer.xcdatamodel; sourceTree = "<group>"; };
 		7904702425D8CB5900F5189F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7904702725D8CB5900F5189F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +48,7 @@
 		7904703925D8CB5900F5189F /* PixOrganizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixOrganizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7904703D25D8CB5900F5189F /* PixOrganizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixOrganizerUITests.swift; sourceTree = "<group>"; };
 		7904703F25D8CB5900F5189F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79E9A7E525D9896C00EEF1C3 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +99,9 @@
 		7904701725D8CB5900F5189F /* PixOrganizer */ = {
 			isa = PBXGroup;
 			children = (
+				79E9A7E325D9892000EEF1C3 /* Views */,
 				7904701825D8CB5900F5189F /* AppDelegate.swift */,
 				7904701A25D8CB5900F5189F /* SceneDelegate.swift */,
-				7904701C25D8CB5900F5189F /* ViewController.swift */,
-				7904701E25D8CB5900F5189F /* Main.storyboard */,
 				7904702425D8CB5900F5189F /* Assets.xcassets */,
 				7904702625D8CB5900F5189F /* LaunchScreen.storyboard */,
 				7904702925D8CB5900F5189F /* Info.plist */,
@@ -131,6 +128,22 @@
 			path = PixOrganizerUITests;
 			sourceTree = "<group>";
 		};
+		79E9A7E325D9892000EEF1C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79E9A7E425D9893500EEF1C3 /* Contacts */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		79E9A7E425D9893500EEF1C3 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				79E9A7E525D9896C00EEF1C3 /* ContactsViewController.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,6 +154,7 @@
 				7904701125D8CB5900F5189F /* Sources */,
 				7904701225D8CB5900F5189F /* Frameworks */,
 				7904701325D8CB5900F5189F /* Resources */,
+				7904704E25D8CC2800F5189F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -236,7 +250,6 @@
 			files = (
 				7904702825D8CB5900F5189F /* LaunchScreen.storyboard in Resources */,
 				7904702525D8CB5900F5189F /* Assets.xcassets in Resources */,
-				7904702025D8CB5900F5189F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,15 +269,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7904704E25D8CC2800F5189F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7904701125D8CB5900F5189F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7904701D25D8CB5900F5189F /* ViewController.swift in Sources */,
 				7904701925D8CB5900F5189F /* AppDelegate.swift in Sources */,
 				7904701B25D8CB5900F5189F /* SceneDelegate.swift in Sources */,
 				7904702325D8CB5900F5189F /* PixOrganizer.xcdatamodeld in Sources */,
+				79E9A7E625D9896C00EEF1C3 /* ContactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +333,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7904701E25D8CB5900F5189F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7904701F25D8CB5900F5189F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7904702625D8CB5900F5189F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
