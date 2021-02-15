@@ -15,6 +15,7 @@
 		7904703325D8CB5900F5189F /* PixOrganizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7904703225D8CB5900F5189F /* PixOrganizerTests.swift */; };
 		7904703E25D8CB5900F5189F /* PixOrganizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7904703D25D8CB5900F5189F /* PixOrganizerUITests.swift */; };
 		79E9A7E625D9896C00EEF1C3 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9A7E525D9896C00EEF1C3 /* ContactsViewController.swift */; };
+		79E9A7F525D98B8D00EEF1C3 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9A7F425D98B8D00EEF1C3 /* ContactTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7904703D25D8CB5900F5189F /* PixOrganizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixOrganizerUITests.swift; sourceTree = "<group>"; };
 		7904703F25D8CB5900F5189F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79E9A7E525D9896C00EEF1C3 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		79E9A7F425D98B8D00EEF1C3 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,9 +141,18 @@
 		79E9A7E425D9893500EEF1C3 /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
+				79E9A7F325D98B6800EEF1C3 /* Cells */,
 				79E9A7E525D9896C00EEF1C3 /* ContactsViewController.swift */,
 			);
 			path = Contacts;
+			sourceTree = "<group>";
+		};
+		79E9A7F325D98B6800EEF1C3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				79E9A7F425D98B8D00EEF1C3 /* ContactTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7904701925D8CB5900F5189F /* AppDelegate.swift in Sources */,
+				79E9A7F525D98B8D00EEF1C3 /* ContactTableViewCell.swift in Sources */,
 				7904701B25D8CB5900F5189F /* SceneDelegate.swift in Sources */,
 				7904702325D8CB5900F5189F /* PixOrganizer.xcdatamodeld in Sources */,
 				79E9A7E625D9896C00EEF1C3 /* ContactsViewController.swift in Sources */,
