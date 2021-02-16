@@ -26,8 +26,9 @@ class ContactsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .blue
+        self.view.backgroundColor = .white
         self.setupConstraints()
+        self.setupNavBar()
     }
     
     // MARK: UI setup
@@ -41,6 +42,19 @@ class ContactsViewController: UIViewController {
             self.contactsTableView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
             self.contactsTableView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor)
         ])
+    }
+    
+    private func setupNavBar() {
+        let barButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewContactAction))
+        self.navigationItem.rightBarButtonItem = barButton
+        self.title = "Contacts"
+    }
+    
+    // MARK: Actions
+    
+    @objc
+    private func addNewContactAction() {
+        print("added")
     }
 }
 

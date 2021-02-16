@@ -130,21 +130,45 @@
 			path = PixOrganizerUITests;
 			sourceTree = "<group>";
 		};
-		79E9A7E325D9892000EEF1C3 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				79E9A7E425D9893500EEF1C3 /* Contacts */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		79E9A7E425D9893500EEF1C3 /* Contacts */ = {
+		7936C8BC25DC3ACE00D37DA7 /* ListContacts */ = {
 			isa = PBXGroup;
 			children = (
 				79E9A7F325D98B6800EEF1C3 /* Cells */,
 				79E9A7E525D9896C00EEF1C3 /* ContactsViewController.swift */,
 			);
-			path = Contacts;
+			path = ListContacts;
+			sourceTree = "<group>";
+		};
+		7936C8BD25DC3ADE00D37DA7 /* AddContact */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddContact;
+			sourceTree = "<group>";
+		};
+		7936C8BE25DC3AF300D37DA7 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		79E9A7E325D9892000EEF1C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7936C8BE25DC3AF300D37DA7 /* Profile */,
+				79E9A7E425D9893500EEF1C3 /* Contact */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		79E9A7E425D9893500EEF1C3 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				7936C8BD25DC3ADE00D37DA7 /* AddContact */,
+				7936C8BC25DC3ACE00D37DA7 /* ListContacts */,
+			);
+			path = Contact;
 			sourceTree = "<group>";
 		};
 		79E9A7F325D98B6800EEF1C3 /* Cells */ = {
