@@ -15,7 +15,8 @@ class ContactsViewController: UIViewController {
         let obj = UITableView()
         obj.delegate = self
         obj.dataSource = self
-        obj.backgroundColor = .green
+        obj.backgroundColor = .clear
+        obj.separatorStyle = .none
         obj.register(ContactTableViewCell.self, forCellReuseIdentifier: ContactTableViewCell.identifier)
         obj.translatesAutoresizingMaskIntoConstraints = false
         return obj
@@ -54,6 +55,11 @@ extension ContactsViewController: UITableViewDelegate, UITableViewDataSource {
             return customCell
         }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let screenHeight = UIScreen.main.bounds.height
+        return screenHeight / 12
     }
     
 }
