@@ -6,8 +6,12 @@
 //
 
 import UIKit
+import ViewModels
 
-class ContactsViewController: UIViewController {
+class ListContactsViewController: UIViewController {
+    
+    // MARK: Control variables
+    let viewModel = ListContactsViewModel()
     
     // MARK: UI elements
     
@@ -71,7 +75,7 @@ class ContactsViewController: UIViewController {
     }
 }
 
-extension ContactsViewController: UITableViewDelegate, UITableViewDataSource {
+extension ListContactsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         3
     }

@@ -13,11 +13,14 @@
 		7904702525D8CB5900F5189F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7904702425D8CB5900F5189F /* Assets.xcassets */; };
 		7904702825D8CB5900F5189F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7904702625D8CB5900F5189F /* LaunchScreen.storyboard */; };
 		7904703325D8CB5900F5189F /* PixOrganizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7904703225D8CB5900F5189F /* PixOrganizerTests.swift */; };
-		7904703E25D8CB5900F5189F /* PixOrganizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7904703D25D8CB5900F5189F /* PixOrganizerUITests.swift */; };
 		795E3A3625DC5487008C74B1 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E3A3525DC5487008C74B1 /* UIColorExtension.swift */; };
 		795E3A3E25DC5639008C74B1 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E3A3D25DC5639008C74B1 /* AddContactViewController.swift */; };
 		795E3A4325DC567C008C74B1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E3A4225DC567C008C74B1 /* Router.swift */; };
-		79E9A7E625D9896C00EEF1C3 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9A7E525D9896C00EEF1C3 /* ContactsViewController.swift */; };
+		795E3A8925DC5C1B008C74B1 /* ViewModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795E3A8225DC5C1B008C74B1 /* ViewModels.framework */; };
+		795E3A8A25DC5C1B008C74B1 /* ViewModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 795E3A8225DC5C1B008C74B1 /* ViewModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		795E3AA425DC5ECB008C74B1 /* ListContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E3AA325DC5ECB008C74B1 /* ListContactsViewModel.swift */; };
+		795E3AA925DC5FDC008C74B1 /* ViewModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795E3A8225DC5C1B008C74B1 /* ViewModels.framework */; };
+		79E9A7E625D9896C00EEF1C3 /* ListContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9A7E525D9896C00EEF1C3 /* ListContactsViewController.swift */; };
 		79E9A7F525D98B8D00EEF1C3 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9A7F425D98B8D00EEF1C3 /* ContactTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +39,35 @@
 			remoteGlobalIDString = 7904701425D8CB5900F5189F;
 			remoteInfo = PixOrganizer;
 		};
+		795E3A8725DC5C1B008C74B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7904700D25D8CB5800F5189F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 795E3A8125DC5C1B008C74B1;
+			remoteInfo = ViewModels;
+		};
+		795E3AAA25DC5FDC008C74B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7904700D25D8CB5800F5189F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 795E3A8125DC5C1B008C74B1;
+			remoteInfo = ViewModels;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		795E3A8E25DC5C1B008C74B1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				795E3A8A25DC5C1B008C74B1 /* ViewModels.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7904701525D8CB5900F5189F /* PixOrganizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixOrganizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,12 +81,13 @@
 		7904703225D8CB5900F5189F /* PixOrganizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixOrganizerTests.swift; sourceTree = "<group>"; };
 		7904703425D8CB5900F5189F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7904703925D8CB5900F5189F /* PixOrganizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixOrganizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7904703D25D8CB5900F5189F /* PixOrganizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixOrganizerUITests.swift; sourceTree = "<group>"; };
-		7904703F25D8CB5900F5189F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		795E3A3525DC5487008C74B1 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		795E3A3D25DC5639008C74B1 /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
 		795E3A4225DC567C008C74B1 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		79E9A7E525D9896C00EEF1C3 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		795E3A8225DC5C1B008C74B1 /* ViewModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViewModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		795E3A8525DC5C1B008C74B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		795E3AA325DC5ECB008C74B1 /* ListContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContactsViewModel.swift; sourceTree = "<group>"; };
+		79E9A7E525D9896C00EEF1C3 /* ListContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContactsViewController.swift; sourceTree = "<group>"; };
 		79E9A7F425D98B8D00EEF1C3 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +96,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				795E3A8925DC5C1B008C74B1 /* ViewModels.framework in Frameworks */,
+				795E3AA925DC5FDC008C74B1 /* ViewModels.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +115,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		795E3A7F25DC5C1B008C74B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -89,8 +130,9 @@
 			children = (
 				7904701725D8CB5900F5189F /* PixOrganizer */,
 				7904703125D8CB5900F5189F /* PixOrganizerTests */,
-				7904703C25D8CB5900F5189F /* PixOrganizerUITests */,
+				795E3A8325DC5C1B008C74B1 /* ViewModels */,
 				7904701625D8CB5900F5189F /* Products */,
+				795E3AA825DC5FDC008C74B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +142,7 @@
 				7904701525D8CB5900F5189F /* PixOrganizer.app */,
 				7904702E25D8CB5900F5189F /* PixOrganizerTests.xctest */,
 				7904703925D8CB5900F5189F /* PixOrganizerUITests.xctest */,
+				795E3A8225DC5C1B008C74B1 /* ViewModels.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,7 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				795E3A3425DC544E008C74B1 /* Extensions */,
-				795E3A2A25DC3E1F008C74B1 /* CustomComponents */,
 				79E9A7E325D9892000EEF1C3 /* Views */,
 				7904701825D8CB5900F5189F /* AppDelegate.swift */,
 				7904701A25D8CB5900F5189F /* SceneDelegate.swift */,
@@ -129,20 +171,11 @@
 			path = PixOrganizerTests;
 			sourceTree = "<group>";
 		};
-		7904703C25D8CB5900F5189F /* PixOrganizerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7904703D25D8CB5900F5189F /* PixOrganizerUITests.swift */,
-				7904703F25D8CB5900F5189F /* Info.plist */,
-			);
-			path = PixOrganizerUITests;
-			sourceTree = "<group>";
-		};
 		7936C8BC25DC3ACE00D37DA7 /* ListContacts */ = {
 			isa = PBXGroup;
 			children = (
 				79E9A7F325D98B6800EEF1C3 /* Cells */,
-				79E9A7E525D9896C00EEF1C3 /* ContactsViewController.swift */,
+				79E9A7E525D9896C00EEF1C3 /* ListContactsViewController.swift */,
 			);
 			path = ListContacts;
 			sourceTree = "<group>";
@@ -155,20 +188,6 @@
 			path = AddContact;
 			sourceTree = "<group>";
 		};
-		7936C8BE25DC3AF300D37DA7 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		795E3A2A25DC3E1F008C74B1 /* CustomComponents */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CustomComponents;
-			sourceTree = "<group>";
-		};
 		795E3A3425DC544E008C74B1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,10 +196,41 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		795E3A8325DC5C1B008C74B1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				795E3A9525DC5C33008C74B1 /* Contact */,
+				795E3A8525DC5C1B008C74B1 /* Info.plist */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		795E3A9525DC5C33008C74B1 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				795E3AA225DC5EAE008C74B1 /* ListContacts */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		795E3AA225DC5EAE008C74B1 /* ListContacts */ = {
+			isa = PBXGroup;
+			children = (
+				795E3AA325DC5ECB008C74B1 /* ListContactsViewModel.swift */,
+			);
+			path = ListContacts;
+			sourceTree = "<group>";
+		};
+		795E3AA825DC5FDC008C74B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		79E9A7E325D9892000EEF1C3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				7936C8BE25DC3AF300D37DA7 /* Profile */,
 				79E9A7E425D9893500EEF1C3 /* Contact */,
 				795E3A4225DC567C008C74B1 /* Router.swift */,
 			);
@@ -206,6 +256,16 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		795E3A7D25DC5C1B008C74B1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		7904701425D8CB5900F5189F /* PixOrganizer */ = {
 			isa = PBXNativeTarget;
@@ -215,10 +275,13 @@
 				7904701225D8CB5900F5189F /* Frameworks */,
 				7904701325D8CB5900F5189F /* Resources */,
 				7904704E25D8CC2800F5189F /* ShellScript */,
+				795E3A8E25DC5C1B008C74B1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				795E3A8825DC5C1B008C74B1 /* PBXTargetDependency */,
+				795E3AAB25DC5FDC008C74B1 /* PBXTargetDependency */,
 			);
 			name = PixOrganizer;
 			productName = PixOrganizer;
@@ -261,6 +324,24 @@
 			productReference = 7904703925D8CB5900F5189F /* PixOrganizerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		795E3A8125DC5C1B008C74B1 /* ViewModels */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 795E3A8B25DC5C1B008C74B1 /* Build configuration list for PBXNativeTarget "ViewModels" */;
+			buildPhases = (
+				795E3A7D25DC5C1B008C74B1 /* Headers */,
+				795E3A7E25DC5C1B008C74B1 /* Sources */,
+				795E3A7F25DC5C1B008C74B1 /* Frameworks */,
+				795E3A8025DC5C1B008C74B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViewModels;
+			productName = ViewModels;
+			productReference = 795E3A8225DC5C1B008C74B1 /* ViewModels.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -281,6 +362,10 @@
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 7904701425D8CB5900F5189F;
 					};
+					795E3A8125DC5C1B008C74B1 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
 				};
 			};
 			buildConfigurationList = 7904701025D8CB5800F5189F /* Build configuration list for PBXProject "PixOrganizer" */;
@@ -299,6 +384,7 @@
 				7904701425D8CB5900F5189F /* PixOrganizer */,
 				7904702D25D8CB5900F5189F /* PixOrganizerTests */,
 				7904703825D8CB5900F5189F /* PixOrganizerUITests */,
+				795E3A8125DC5C1B008C74B1 /* ViewModels */,
 			);
 		};
 /* End PBXProject section */
@@ -321,6 +407,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7904703725D8CB5900F5189F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		795E3A8025DC5C1B008C74B1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -360,7 +453,7 @@
 				795E3A3E25DC5639008C74B1 /* AddContactViewController.swift in Sources */,
 				7904701B25D8CB5900F5189F /* SceneDelegate.swift in Sources */,
 				7904702325D8CB5900F5189F /* PixOrganizer.xcdatamodeld in Sources */,
-				79E9A7E625D9896C00EEF1C3 /* ContactsViewController.swift in Sources */,
+				79E9A7E625D9896C00EEF1C3 /* ListContactsViewController.swift in Sources */,
 				795E3A3625DC5487008C74B1 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,7 +470,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7904703E25D8CB5900F5189F /* PixOrganizerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		795E3A7E25DC5C1B008C74B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				795E3AA425DC5ECB008C74B1 /* ListContactsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +493,16 @@
 			isa = PBXTargetDependency;
 			target = 7904701425D8CB5900F5189F /* PixOrganizer */;
 			targetProxy = 7904703A25D8CB5900F5189F /* PBXContainerItemProxy */;
+		};
+		795E3A8825DC5C1B008C74B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 795E3A8125DC5C1B008C74B1 /* ViewModels */;
+			targetProxy = 795E3A8725DC5C1B008C74B1 /* PBXContainerItemProxy */;
+		};
+		795E3AAB25DC5FDC008C74B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 795E3A8125DC5C1B008C74B1 /* ViewModels */;
+			targetProxy = 795E3AAA25DC5FDC008C74B1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -527,6 +637,7 @@
 		7904704325D8CB5900F5189F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -545,6 +656,7 @@
 		7904704425D8CB5900F5189F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -640,6 +752,61 @@
 			};
 			name = Release;
 		};
+		795E3A8C25DC5C1B008C74B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ViewModels/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mourayuri.ViewModels;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		795E3A8D25DC5C1B008C74B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ViewModels/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mourayuri.ViewModels;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -675,6 +842,15 @@
 			buildConfigurations = (
 				7904704925D8CB5900F5189F /* Debug */,
 				7904704A25D8CB5900F5189F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		795E3A8B25DC5C1B008C74B1 /* Build configuration list for PBXNativeTarget "ViewModels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				795E3A8C25DC5C1B008C74B1 /* Debug */,
+				795E3A8D25DC5C1B008C74B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
