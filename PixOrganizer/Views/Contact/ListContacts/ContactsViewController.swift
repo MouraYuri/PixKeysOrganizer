@@ -32,7 +32,7 @@ class ContactsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .mainBackgroundColor
         self.setupConstraints()
         self.setupNavBar()
     }
@@ -67,7 +67,7 @@ class ContactsViewController: UIViewController {
     
     @objc
     private func addNewContactAction() {
-        print("added")
+        Router.shared.routeToAddContact(from: self)
     }
 }
 

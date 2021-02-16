@@ -14,6 +14,9 @@
 		7904702825D8CB5900F5189F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7904702625D8CB5900F5189F /* LaunchScreen.storyboard */; };
 		7904703325D8CB5900F5189F /* PixOrganizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7904703225D8CB5900F5189F /* PixOrganizerTests.swift */; };
 		7904703E25D8CB5900F5189F /* PixOrganizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7904703D25D8CB5900F5189F /* PixOrganizerUITests.swift */; };
+		795E3A3625DC5487008C74B1 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E3A3525DC5487008C74B1 /* UIColorExtension.swift */; };
+		795E3A3E25DC5639008C74B1 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E3A3D25DC5639008C74B1 /* AddContactViewController.swift */; };
+		795E3A4325DC567C008C74B1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E3A4225DC567C008C74B1 /* Router.swift */; };
 		79E9A7E625D9896C00EEF1C3 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9A7E525D9896C00EEF1C3 /* ContactsViewController.swift */; };
 		79E9A7F525D98B8D00EEF1C3 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9A7F425D98B8D00EEF1C3 /* ContactTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -49,6 +52,9 @@
 		7904703925D8CB5900F5189F /* PixOrganizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixOrganizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7904703D25D8CB5900F5189F /* PixOrganizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixOrganizerUITests.swift; sourceTree = "<group>"; };
 		7904703F25D8CB5900F5189F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		795E3A3525DC5487008C74B1 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		795E3A3D25DC5639008C74B1 /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		795E3A4225DC567C008C74B1 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		79E9A7E525D9896C00EEF1C3 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		79E9A7F425D98B8D00EEF1C3 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +107,7 @@
 		7904701725D8CB5900F5189F /* PixOrganizer */ = {
 			isa = PBXGroup;
 			children = (
+				795E3A3425DC544E008C74B1 /* Extensions */,
 				795E3A2A25DC3E1F008C74B1 /* CustomComponents */,
 				79E9A7E325D9892000EEF1C3 /* Views */,
 				7904701825D8CB5900F5189F /* AppDelegate.swift */,
@@ -143,6 +150,7 @@
 		7936C8BD25DC3ADE00D37DA7 /* AddContact */ = {
 			isa = PBXGroup;
 			children = (
+				795E3A3D25DC5639008C74B1 /* AddContactViewController.swift */,
 			);
 			path = AddContact;
 			sourceTree = "<group>";
@@ -161,11 +169,20 @@
 			path = CustomComponents;
 			sourceTree = "<group>";
 		};
+		795E3A3425DC544E008C74B1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				795E3A3525DC5487008C74B1 /* UIColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		79E9A7E325D9892000EEF1C3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				7936C8BE25DC3AF300D37DA7 /* Profile */,
 				79E9A7E425D9893500EEF1C3 /* Contact */,
+				795E3A4225DC567C008C74B1 /* Router.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -337,11 +354,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				795E3A4325DC567C008C74B1 /* Router.swift in Sources */,
 				7904701925D8CB5900F5189F /* AppDelegate.swift in Sources */,
 				79E9A7F525D98B8D00EEF1C3 /* ContactTableViewCell.swift in Sources */,
+				795E3A3E25DC5639008C74B1 /* AddContactViewController.swift in Sources */,
 				7904701B25D8CB5900F5189F /* SceneDelegate.swift in Sources */,
 				7904702325D8CB5900F5189F /* PixOrganizer.xcdatamodeld in Sources */,
 				79E9A7E625D9896C00EEF1C3 /* ContactsViewController.swift in Sources */,
+				795E3A3625DC5487008C74B1 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
