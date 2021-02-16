@@ -12,6 +12,8 @@ class ContactTableViewCell: UITableViewCell {
     // MARK: Control variables
     static let identifier = "ContactTableViewCellIdentifier"
     
+    var isFavorited = false
+    
     // MARK: UI elements
     lazy var contactInfosStackView: UIStackView = {
         let obj = UIStackView()
@@ -29,7 +31,7 @@ class ContactTableViewCell: UITableViewCell {
         obj.contentMode = .scaleAspectFit
         obj.layer.masksToBounds = false
         obj.clipsToBounds = true
-        obj.layer.cornerRadius = 21
+        obj.layer.cornerRadius = 24
         obj.translatesAutoresizingMaskIntoConstraints = false
         return obj
     }()
@@ -41,10 +43,11 @@ class ContactTableViewCell: UITableViewCell {
         return obj
     }()
     
-    lazy var isFavoriteIndicatorImageView: UIButton = {
+    lazy var isFavoriteIndicatorButton: UIButton = { [unowned self] in
         let obj = UIButton()
         obj.setImage(UIImage(named: "favoritedIcon"), for: .normal)
         obj.contentMode = .scaleAspectFit
+        obj.addTarget(self, action: #selector(isFavoriteIndicatorAction), for: .touchUpInside)
         obj.translatesAutoresizingMaskIntoConstraints = false
         return obj
     }()
@@ -63,7 +66,7 @@ class ContactTableViewCell: UITableViewCell {
         self.contentView.addSubview(self.contactInfosStackView)
         self.contactInfosStackView.addArrangedSubview(self.contactImageView)
         self.contactInfosStackView.addArrangedSubview(self.contactNameLabel)
-        self.contactInfosStackView.addArrangedSubview(self.isFavoriteIndicatorImageView)
+        self.contactInfosStackView.addArrangedSubview(self.isFavoriteIndicatorButton)
         
         NSLayoutConstraint.activate([
             self.contactInfosStackView.topAnchor.constraint(equalTo: self.contentView.topAnchor),
@@ -73,15 +76,28 @@ class ContactTableViewCell: UITableViewCell {
         ])
         
         NSLayoutConstraint.activate([
-            self.contactImageView.heightAnchor.constraint(equalToConstant: 42),
-            self.contactImageView.widthAnchor.constraint(equalToConstant: 42)
+            self.contactImageView.heightAnchor.constraint(equalToConstant: 48),
+            self.contactImageView.widthAnchor.constraint(equalToConstant: 48)
         ])
         
         NSLayoutConstraint.activate([
-            self.isFavoriteIndicatorImageView.heightAnchor.constraint(equalToConstant: 32),
-            self.isFavoriteIndicatorImageView.widthAnchor.constraint(equalToConstant: 32),
-            self.isFavoriteIndicatorImageView.trailingAnchor.constraint(equalTo: self.contactInfosStackView.trailingAnchor)
+            self.isFavoriteIndicatorButton.heightAnchor.constraint(equalToConstant: 32),
+            self.isFavoriteIndicatorButton.widthAnchor.constraint(equalToConstant: 32),
+            self.isFavoriteIndicatorButton.trailingAnchor.constraint(equalTo: self.contactInfosStackView.trailingAnchor)
         ])
+    }
+    
+    private func changeFavoriteStatus(to newValue: Bool) {
+        self.isFavorited = newValue
+        let img = newValue ? UIImage(named: "favoritedIcon") : UIImage(named: "notFavoritedIcon")
+        self.isFavoriteIndicatorButton.setImage(img, for: .normal)
+    }
+    
+    // MARK: Actions
+    
+    @objc
+    private func isFavoriteIndicatorAction () {
+        self.changeFavoriteStatus(to: !(self.isFavorited))
     }
     
     // MARK: Auxiliars functions
