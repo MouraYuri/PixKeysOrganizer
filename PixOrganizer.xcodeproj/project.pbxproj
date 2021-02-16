@@ -101,6 +101,7 @@
 		7904701725D8CB5900F5189F /* PixOrganizer */ = {
 			isa = PBXGroup;
 			children = (
+				795E3A2A25DC3E1F008C74B1 /* CustomComponents */,
 				79E9A7E325D9892000EEF1C3 /* Views */,
 				7904701825D8CB5900F5189F /* AppDelegate.swift */,
 				7904701A25D8CB5900F5189F /* SceneDelegate.swift */,
@@ -151,6 +152,13 @@
 			children = (
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		795E3A2A25DC3E1F008C74B1 /* CustomComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomComponents;
 			sourceTree = "<group>";
 		};
 		79E9A7E325D9892000EEF1C3 /* Views */ = {

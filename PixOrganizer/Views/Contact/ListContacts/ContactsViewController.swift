@@ -11,6 +11,12 @@ class ContactsViewController: UIViewController {
     
     // MARK: UI elements
     
+    lazy var searchBar: UISearchBar = {
+        let obj = UISearchBar()
+        obj.translatesAutoresizingMaskIntoConstraints = false
+        return obj
+    }()
+    
     lazy var contactsTableView: UITableView = { [unowned self] in
         let obj = UITableView()
         obj.delegate = self
@@ -34,10 +40,17 @@ class ContactsViewController: UIViewController {
     // MARK: UI setup
     
     private func setupConstraints() {
+        self.view.addSubview(self.searchBar)
         self.view.addSubview(self.contactsTableView)
         
         NSLayoutConstraint.activate([
-            self.contactsTableView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
+            self.searchBar.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
+            self.searchBar.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            self.searchBar.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
+        ])
+        
+        NSLayoutConstraint.activate([
+            self.contactsTableView.topAnchor.constraint(equalTo: self.searchBar.bottomAnchor),
             self.contactsTableView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             self.contactsTableView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
             self.contactsTableView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor)
