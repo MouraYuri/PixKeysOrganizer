@@ -15,13 +15,13 @@ class ListContactsViewController: UIViewController {
     
     // MARK: UI elements
     
-    lazy var searchBar: UISearchBar = {
+    lazy private(set) var searchBar: UISearchBar = {
         let obj = UISearchBar()
         obj.translatesAutoresizingMaskIntoConstraints = false
         return obj
     }()
     
-    lazy var contactsTableView: UITableView = { [unowned self] in
+    lazy private(set) var contactsTableView: UITableView = { [unowned self] in
         let obj = UITableView()
         obj.delegate = self
         obj.dataSource = self
